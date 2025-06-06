@@ -32,6 +32,6 @@ st.title("📸 Real-time Face & Eye Detection")
 st.markdown("This app uses your webcam to detect faces and eyes in real-time.")
 webrtc_streamer(
     key="face-detection",
-    video_transformer_factory=FaceDetectionTransformer,
+    video_transformer_factory=SomeClass,
     media_stream_constraints={"video": True, "audio": False},
 )
